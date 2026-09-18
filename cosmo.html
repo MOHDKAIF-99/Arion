@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmo — Email Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cosmo-theme">
+
+  <header class="topbar">
+    <a href="index.html" class="back-link">← Back</a>
+    <h1 class="logo">📧 Cosmo</h1>
+  </header>
+
+  <main class="chat-screen">
+
+    <div class="companion-banner cosmo-banner">
+      <p>Tell me what email you'd like to send. I'll draft it — I never send without your approval.</p>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="message bot-message">
+        Hi, I'm Cosmo 👋 What email should I draft for you today?
+      </div>
+    </div>
+
+    <div class="chat-input-bar">
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="e.g. Email my boss about the project delay..."
+      />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <div class="notification-banner" id="notifyBanner" hidden>
+      ✅ Draft ready! Check your Gmail drafts to review and send.
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="cosmo.js"></script>
+
+</body>
+</html>
