@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eris — General Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="eris-theme">
+
+  <header class="topbar">
+    <a href="index.html" class="back-link">← Back</a>
+    <h1 class="logo">✨ Eris</h1>
+  </header>
+
+  <main class="chat-screen">
+
+    <div class="companion-banner eris-banner">
+      <p>Ask me about the weather, do a quick calculation, find a YouTube video, play music, or just chat.</p>
+    </div>
+
+    <div class="quick-actions">
+      <button class="quick-btn" data-action="weather">🌤 Weather</button>
+      <button class="quick-btn" data-action="calculator">🧮 Calculator</button>
+      <button class="quick-btn" data-action="youtube">▶️ YouTube</button>
+      <button class="quick-btn" data-action="music">🎵 Music</button>
+    </div>
+    <div class="chat-window" id="chatWindow">
+      <div class="message bot-message">
+        Hey, I'm Eris ✨ What do you need help with?
+      </div>
+    </div>
+    <div class="chat-input-bar">
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="e.g. What's the weather in Kanpur? or 25*4+10"
+      />
+      <button id="sendBtn">Send</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="eris.js"></script>
+</body>
+</html>
